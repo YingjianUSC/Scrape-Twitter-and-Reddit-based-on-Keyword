@@ -46,10 +46,11 @@ def get_second_dataset():
 # Scrape all comments from Reddit as dataset3
 import praw
 def get_third_dataset():
-    reddit_read_only = praw.Reddit(client_id="PlE2KRbFbJuh7abkxcL-0w",     
-                                   client_secret="QZ0JWkWBlfyCbhpGYaZ7EBXgo805FQ", 
-                                   user_agent="ChloeZhang")        # your user agent
-    # URL of the post
+    reddit_read_only = praw.Reddit(client_id="Use your client_id",     
+                                   client_secret="Use your client_secret", 
+                                   user_agent="Use your user_agent")        # your user agent
+    
+    # URL of the post you want to scrape
     url = "https://www.reddit.com/r/AskAnAmerican/comments/m5yj40/would_you_support_a_boycott_of_the_2022_beijing/"
     # Creating a submission object
     submission = reddit_read_only.submission(url=url)
